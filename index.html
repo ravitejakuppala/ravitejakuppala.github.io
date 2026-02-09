@@ -3,170 +3,178 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Raviteja Kuppala | ML Engineer</title>
-
+<title>Raviteja Kuppala | ML & AI</title>
 <style>
+/* Reset */
+* { margin:0; padding:0; box-sizing:border-box; }
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #ffffff;
-    color: #111;
-    line-height: 1.7;
+    font-family: 'Segoe UI', sans-serif;
+    color: #f5f5f5;
+    background: #0f111a;
+    overflow-x: hidden;
 }
+a { color: #00d1ff; text-decoration:none; transition: 0.3s; }
+a:hover { text-decoration: underline; }
 
-.container {
-    max-width: 850px;
-    margin: auto;
-    padding: 60px 20px;
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #0f111a 0%, #1a1c2c 100%);
 }
-
-h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 22px;
-    margin-top: 60px;
+.hero h1 {
+    font-size: 4em;
+    font-weight: 800;
     margin-bottom: 20px;
-    color: #444;
-    letter-spacing: 1px;
-    text-transform: uppercase;
 }
-
-.subtitle {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 30px;
-}
-
-.links a {
-    margin-right: 20px;
-    text-decoration: none;
-    color: #2563eb;
-    font-weight: 500;
-}
-
-.links a:hover {
-    text-decoration: underline;
-}
-
-.section {
+.hero p {
+    font-size: 1.5em;
+    max-width: 700px;
     margin-bottom: 40px;
+    color: #aaa;
 }
 
-.project {
-    margin-bottom: 25px;
+/* Buttons */
+.buttons a {
+    display:inline-block;
+    padding: 12px 28px;
+    margin:0 10px;
+    border-radius: 6px;
+    font-weight:600;
+    border:2px solid #00d1ff;
+    transition: 0.3s;
+}
+.buttons a.primary {
+    background:#00d1ff;
+    color:#0f111a;
+}
+.buttons a:hover { opacity:0.85; }
+
+/* Sections */
+section {
+    padding: 100px 20px;
+    max-width: 1000px;
+    margin:auto;
+}
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-align: center;
+    color:#00d1ff;
 }
 
-.project h3 {
-    margin-bottom: 5px;
+/* Cards */
+.card {
+    background:#1a1c2c;
+    border-radius: 12px;
+    padding:30px;
+    margin-bottom:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+    transition: transform 0.3s;
 }
+.card:hover { transform: translateY(-10px); }
+.card h3 { margin-bottom:15px; color:#fff; }
+.card p { color:#ccc; line-height:1.6; }
 
-.project p {
-    color: #555;
-    margin: 0;
-}
+/* Projects Grid */
+.projects { display:grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap:30px; }
 
-.skills {
-    color: #555;
-}
+/* Skills */
+.skills { text-align:center; color:#ccc; font-weight:500; }
 
+/* Footer */
 footer {
-    margin-top: 80px;
-    font-size: 14px;
-    color: #888;
+    text-align:center;
+    padding:50px 20px;
+    color:#555;
+}
+
+/* Animations */
+.fade-in { opacity:0; transform:translateY(30px); animation: fadeIn 1s forwards; }
+.fade-in.delay-1 { animation-delay:0.3s; }
+.fade-in.delay-2 { animation-delay:0.6s; }
+.fade-in.delay-3 { animation-delay:0.9s; }
+
+@keyframes fadeIn {
+    to { opacity:1; transform:translateY(0); }
 }
 </style>
 </head>
-
 <body>
 
-<div class="container">
-
-    <h1>Kuppala Sri Sai Raviteja</h1>
-    <div class="subtitle">
-        Machine Learning & Data Science Professional  
-        <br>
-        MPS in Applied Machine Intelligence (4.0 GPA) – Northeastern University
+<!-- Hero -->
+<div class="hero">
+    <h1 class="fade-in">Kuppala Sri Sai Raviteja</h1>
+    <p class="fade-in delay-1">
+        Transforming Data into Actionable Machine Learning & AI Solutions.
+        Specializing in predictive analytics, scalable ML pipelines, and data-driven impact.
+    </p>
+    <div class="buttons fade-in delay-2">
+        <a href="Raviteja_Kuppala_Resume.pdf" class="primary">Download Resume</a>
+        <a href="https://github.com/YOURUSERNAME" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/YOURPROFILE" target="_blank">LinkedIn</a>
     </div>
-
-    <div class="links">
-        <a href="Sri_Sai_Raviteja_Kuppala_Resume.pdf" target="_blank">Resume</a>
-        <a href="https://github.com/ravitejakuppala/" target="_blank">GitHub</a>
-        <a href="www.linkedin.com/in/raviteja-kuppala" target="_blank">LinkedIn</a>
-        <a href="mailto:ravitejakuppala325@gmail.com">Email</a>
-    </div>
-
-    <div class="section">
-        <h2>About</h2>
-        <p>
-            I build scalable machine learning systems that transform raw data into actionable insights. 
-            My experience spans predictive modeling, feature engineering, model evaluation, and data-driven decision systems. 
-            I am particularly interested in developing reliable ML pipelines that solve real-world business and healthcare problems.
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>Experience</h2>
-
-        <div class="project">
-            <h3>Junior Software Developer – ProCorp</h3>
-            <p>
-                Developed data-driven applications using Python and SQL. 
-                Improved backend data workflows and supported analytics-driven decision-making.
-            </p>
-        </div>
-
-        <div class="project">
-            <h3>Data Science Intern – Innomatics Research Labs</h3>
-            <p>
-                Built predictive models, performed EDA, and optimized ML performance 
-                using classification algorithms and model validation techniques.
-            </p>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Projects</h2>
-
-        <div class="project">
-            <h3>Telecom Customer Churn Prediction</h3>
-            <p>
-                Designed classification models including Logistic Regression and Random Forest. 
-                Improved recall through handling class imbalance and model tuning.
-            </p>
-        </div>
-
-        <div class="project">
-            <h3>Healthcare Risk Modeling</h3>
-            <p>
-                Developed supervised ML models to assess patient risk and support predictive healthcare analytics.
-            </p>
-        </div>
-
-        <div class="project">
-            <h3>Big Data Analytics with Spark</h3>
-            <p>
-                Processed large-scale datasets using PySpark and implemented distributed data pipelines.
-            </p>
-        </div>
-
-    </div>
-
-    <div class="section">
-        <h2>Skills</h2>
-        <p class="skills">
-            Python (Pandas, NumPy, Scikit-learn) · Machine Learning · SQL · PySpark · 
-            TensorFlow · Data Visualization · Git
-        </p>
-    </div>
-
-    <footer>
-        © 2026 Raviteja Kuppala · Boston, MA
-    </footer>
-
 </div>
+
+<!-- About -->
+<section class="fade-in delay-1">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            I am a Master’s student in Applied Machine Intelligence at Northeastern University (4.0 GPA), specializing in ML and data-driven systems.
+            I build scalable ML pipelines that convert raw data into actionable insights. Experienced in predictive modeling, feature engineering, and real-world deployment.
+        </p>
+    </div>
+</section>
+
+<!-- Experience -->
+<section class="fade-in delay-2">
+    <h2>Experience</h2>
+    <div class="card">
+        <h3>Junior Software Developer – ProCorp</h3>
+        <p>Developed data-driven applications using Python and SQL. Optimized backend workflows and supported analytics-driven decisions.</p>
+    </div>
+    <div class="card">
+        <h3>Data Science Intern – Innomatics Research Labs</h3>
+        <p>Built ML models for predictive analytics, performed EDA, and optimized classification performance for real-world datasets.</p>
+    </div>
+</section>
+
+<!-- Projects -->
+<section class="fade-in delay-3">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Telecom Customer Churn Prediction</h3>
+            <p>Designed classification models to predict churn, optimized recall using cross-validation and feature engineering.</p>
+        </div>
+        <div class="card">
+            <h3>Healthcare Risk Modeling</h3>
+            <p>Developed predictive models assessing patient risk for healthcare analytics pipelines.</p>
+        </div>
+        <div class="card">
+            <h3>Big Data Analytics with Spark</h3>
+            <p>Processed large datasets with PySpark, built scalable distributed pipelines for analysis.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills -->
+<section class="fade-in delay-2">
+    <h2>Skills</h2>
+    <p class="skills">
+        Python · ML & AI · SQL · PySpark · TensorFlow · Data Visualization · Git · Tableau
+    </p>
+</section>
+
+<!-- Footer -->
+<footer class="fade-in delay-1">
+    © 2026 Raviteja Kuppala · Boston, MA
+</footer>
 
 </body>
 </html>
